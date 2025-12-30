@@ -125,17 +125,19 @@ body{
 
 /* Photo circle */
 .avatar{
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #fff;
   box-shadow: 0 10px 26px rgba(0,0,0,.10);
 }
+
+
 .avatarFallback{
   display:none;
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   place-items:center;
   background: #fff;
