@@ -143,58 +143,31 @@
 <section id="research" class="section">
   <h2>Research</h2>
 
-  <p class="lead">
-    My research sits at the intersection of agricultural robotics, computer vision, and AI-driven sensing,
-    with a strong focus on field-deployable systems that reduce labor requirements and improve automation in farms.
-  </p>
+  <div class="rHighlights">
+    <div class="rHighlightsHint">Click an image to open the related paper.</div>
 
-  <div class="research-grid">
-    <article class="r-card">
-      <h3>Agricultural Robotics & Field Automation</h3>
-      <ul>
-        <li>Robotic harvesting systems (Ph.D. work on cotton boll harvesting robotics).</li>
-        <li>End-to-end outdoor pipeline mindset: perception → decision → actuation for unstructured fields.</li>
-        <li>Smart Mechanization solutions specialized for hill agriculture (design + practical deployment focus).</li>
-      </ul>
-    </article>
+    <div class="slider" aria-label="Research highlights slider">
+      <button class="sliderBtn prev" type="button" aria-label="Previous">‹</button>
 
-    <article class="r-card">
-      <h3>Computer Vision for Crops</h3>
-      <ul>
-        <li>Deep learning for crop/plant part detection and segmentation in real field conditions.</li>
-        <li>Vision transformer and CNN-based perception methods for crop objects (e.g., cotton bolls).</li>
+      <div class="sliderViewport">
+        <a class="slideLink active" href="https://doi.org/10.1016/j.compag.2024.109517" target="_blank" rel="noopener">
+          <img class="slideImg" src="assets/research/1.jpg" alt="Robotic cotton harvesting paper">
+        </a>
 
-      </ul>
-    </article>
+        <a class="slideLink" href="https://doi.org/10.1016/j.indcrop.2024.120241" target="_blank" rel="noopener">
+          <img class="slideImg" src="assets/research/2.png" alt="Cotton boll segmentation paper">
+        </a>
 
-    <article class="r-card">
-      <h3>AI-Enabled Optical Sensing</h3>
-      <ul>
-        <li>NIR spectroscopy + AI for rapid, non-destructive trait prediction and germplasm screening.</li>
-        <li>Transformer and deep learning models for protein/quality prediction from spectra.</li>
+        <a class="slideLink" href="https://doi.org/10.1016/j.fbio.2025.108201" target="_blank" rel="noopener">
+          <img class="slideImg" src="assets/research/3.png" alt="Cherry pit detection paper">
+        </a>
+      </div>
 
-      </ul>
-    </article>
-
-    <article class="r-card">
-      <h3>Mobile & Digital Tools for Farmers</h3>
-      <ul>
-        <li>Android apps translating models into usable, on-field decision support (deployment-oriented).</li>
-        <li>Real-time, user-friendly interfaces that reduce the gap between research and adoption.</li>
-      </ul>
-    </article>
-  </div>
-
-    <div class="r-box">
-      <h3>Current Directions</h3>
-      <ul class="r-list">        
-        <li>Developing vision-integrated robotic harvesting systems for crops and vegetables.</li>
-        <li>Integrating AI in agriculture and allied sciences to automate precision farming.</li>
-        <li>Reducing post-harvest losses and drudgery in hill agriculture via smart mechanization.</li>
-        <li>Scalable spectral/vision screening tools for rapid phenotyping and quality assessment.</li>
-      </ul>
+      <button class="sliderBtn next" type="button" aria-label="Next">›</button>
+    </div>
   </div>
 </section>
+
 
 
 <!-- ===================== Publications ===================== -->
@@ -660,6 +633,44 @@
 
   show(idx);
 })();
+
+
+    // ===== Research slider (auto 3s + arrows) =====
+(function(){
+  const root = document.querySelector("#research .slider");
+  if(!root) return;
+
+  const slides = Array.from(root.querySelectorAll(".slideLink"));
+  const prevBtn = root.querySelector(".sliderBtn.prev");
+  const nextBtn = root.querySelector(".sliderBtn.next");
+  if(slides.length === 0) return;
+
+  let idx = 0;
+
+  function show(i){
+    slides.forEach((s, k) => s.classList.toggle("active", k === i));
+  }
+  function next(){
+    idx = (idx + 1) % slides.length;
+    show(idx);
+  }
+  function prev(){
+    idx = (idx - 1 + slides.length) % slides.length;
+    show(idx);
+  }
+
+  nextBtn?.addEventListener("click", () => { next(); resetTimer(); });
+  prevBtn?.addEventListener("click", () => { prev(); resetTimer(); });
+
+  let timer = setInterval(next, 3000);
+  function resetTimer(){
+    clearInterval(timer);
+    timer = setInterval(next, 3000);
+  }
+
+  show(idx);
+})();
+
 
   </script>
 </body>
