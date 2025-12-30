@@ -153,8 +153,8 @@ body{
 
 .designation{
   margin-top: 10px;
-  color: var(--muted);
-  font-size: 18px;
+  color: #000; 
+  font-size: 20px; font-weight: 800;
 }
 
 /* Keywords */
