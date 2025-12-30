@@ -9,46 +9,38 @@
 </head>
 
 <body>
-  <!-- Top bar -->
+  <!-- Top navigation -->
   <header class="topbar" id="top">
     <div class="topbar-inner">
-      <a class="brand" href="#top" aria-label="Go to top">
-        <span class="brand-dot"></span>
-        <span class="brand-text">Naseeb Singh</span>
-      </a>
+      <div class="brand">Dr. Naseeb Singh</div>
 
       <nav class="nav" aria-label="Primary navigation">
-        <a class="navchip" href="#about" data-section="about">About</a>
-        <a class="navchip" href="#education" data-section="education">Education</a>
-        <a class="navchip" href="#research" data-section="research">Research</a>
-        <a class="navchip" href="#publications" data-section="publications">Publications</a>
-        <a class="navchip" href="#patents" data-section="patents">Patents</a>
-        <a class="navchip" href="#copyrights" data-section="copyrights">Copyrights</a>
-        <a class="navchip" href="#talks" data-section="talks">Talks</a>
-        <a class="navchip" href="#news" data-section="news">News</a>
-        <a class="navchip" href="#gallery" data-section="gallery">Gallery</a>
+        <a class="navCircle" href="#about" data-section="about">About</a>
+        <a class="navCircle" href="#education" data-section="education">Education</a>
+        <a class="navCircle" href="#research" data-section="research">Research</a>
+        <a class="navCircle" href="#publications" data-section="publications">Publications</a>
+        <a class="navCircle" href="#patents" data-section="patents">Patents</a>
+        <a class="navCircle" href="#copyrights" data-section="copyrights">Copyrights</a>
+        <a class="navCircle" href="#talks" data-section="talks">Talks</a>
+        <a class="navCircle" href="#news" data-section="news">News</a>
+        <a class="navCircle" href="#gallery" data-section="gallery">Gallery</a>
+        <a class="navCircle" href="#contact" data-section="contact">Contact</a>
       </nav>
-
-      <a class="cvbtn" href="cv.pdf" target="_blank" rel="noopener">CV</a>
     </div>
   </header>
 
   <main class="container">
     <!-- Hero -->
-    <section class="hero card">
+    <section class="hero">
       <div class="hero-left">
         <img class="avatar" src="assets/profile.jpg" alt="Dr. Naseeb Singh"
              onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='grid';" />
-        <div class="avatar-fallback" id="avatarFallback" aria-label="Profile photo placeholder">
-          NS
-        </div>
+        <div class="avatarFallback" id="avatarFallback" aria-label="Profile photo placeholder">NS</div>
       </div>
 
       <div class="hero-right">
         <h1 class="name">Dr. Naseeb Singh</h1>
-        <p class="designation">
-          Postdoctoral Research Scholar, Michigan State University <span class="sep">•</span> Apr 2025–present
-        </p>
+        <div class="designation">Postdoctoral Research Scholar, Michigan State University (Apr 2025–present)</div>
 
         <div class="keywords" aria-label="Research keywords">
           <span class="kw">Agricultural Robotics</span>
@@ -58,209 +50,93 @@
           <span class="kw">Precision Agriculture</span>
         </div>
 
-        <div class="hero-links">
-          <!-- Replace # with your real links -->
-          <a class="linkbtn" href="mailto:naseeb501@gmail.com">Email</a>
-          <a class="linkbtn" href="#" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="linkbtn" href="#" target="_blank" rel="noopener">GitHub</a>
-          <a class="linkbtn" href="#" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="linkbtn" href="#" target="_blank" rel="noopener">ORCID</a>
+        <!-- SPACE requested between keywords and links -->
+        <div class="heroLinks" aria-label="Contact links">
+          <!-- replace # with your real links -->
+          <a class="linkPill" href="mailto:naseeb501@gmail.com">Email</a>
+          <a class="linkPill" href="#" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="linkPill" href="#" target="_blank" rel="noopener">GitHub</a>
+          <a class="linkPill" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="linkPill" href="#" target="_blank" rel="noopener">ORCID</a>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section card">
-      <div class="section-head">
-        <h2>About</h2>
-        <span class="badge">Profile</span>
-      </div>
-
-      <p class="lead">
-        I work at the intersection of agricultural robotics, computer vision, and AI-driven sensing,
-        focusing on building practical systems that work in real field conditions.
-      </p>
-
-      <p>
-        My research spans robotics for selective harvesting and mechanization, deep learning models for
-        detection/segmentation, and spectroscopy-coupled AI for rapid trait prediction and germplasm screening.
-        (You can edit this text anytime.)
-      </p>
+    <!-- Sections (placeholders; you will edit later) -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>Write your short introduction here.</p>
     </section>
 
-    <!-- Education -->
-    <section id="education" class="section card">
-      <div class="section-head">
-        <h2>Education</h2>
-        <span class="badge">Academics</span>
-      </div>
-
-      <ul class="timeline">
-        <li>
-          <div class="t-dot"></div>
-          <div class="t-body">
-            <div class="t-top">
-              <strong>Ph.D.</strong> — IIT Kharagpur <span class="t-year">2023</span>
-            </div>
-            <div class="t-sub">Thesis: Cotton-picking robotics, end-effector design, and field evaluation</div>
-          </div>
-        </li>
-        <li>
-          <div class="t-dot"></div>
-          <div class="t-body">
-            <div class="t-top">
-              <strong>M.Tech</strong> — IIT Kharagpur <span class="t-year">2014</span>
-            </div>
-            <div class="t-sub">Farm Machinery &amp; Power</div>
-          </div>
-        </li>
-        <li>
-          <div class="t-dot"></div>
-          <div class="t-body">
-            <div class="t-top">
-              <strong>B.Tech</strong> — CAE Raichur <span class="t-year">2012</span>
-            </div>
-            <div class="t-sub">Agricultural Engineering</div>
-          </div>
-        </li>
-      </ul>
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <p>Placeholder.</p>
     </section>
 
-    <!-- Research -->
-    <section id="research" class="section card">
-      <div class="section-head">
-        <h2>Research</h2>
-        <span class="badge">Focus areas</span>
-      </div>
-
-      <div class="grid3">
-        <div class="feature">
-          <h3>Robotics for harvesting & mechanization</h3>
-          <p>Design, control, and validation of selective harvesting systems (end-effectors, kinematics, timing, field robustness).</p>
-        </div>
-        <div class="feature">
-          <h3>Computer vision in agriculture</h3>
-          <p>Detection/segmentation in clutter, occlusion, and variable illumination using CNNs and vision transformers.</p>
-        </div>
-        <div class="feature">
-          <h3>Spectroscopy + AI</h3>
-          <p>NIR/FTIR/HSI-driven trait prediction using chemometrics and deep learning for rapid, non-destructive screening.</p>
-        </div>
-      </div>
+    <section id="research" class="section">
+      <h2>Research</h2>
+      <p>Placeholder.</p>
     </section>
 
-    <!-- Publications -->
-    <section id="publications" class="section card">
-      <div class="section-head">
-        <h2>Publications</h2>
-        <span class="badge">Selected</span>
-      </div>
-
-      <ol class="pubs">
-        <li>
-          <span class="pubtitle">Vision transformers for cotton boll segmentation: Hyperparameters optimization and comparison with CNNs.</span>
-          <span class="pubmeta">Industrial Crops &amp; Products (2025).</span>
-          <a class="pubdoi" href="#" target="_blank" rel="noopener">DOI</a>
-        </li>
-        <li>
-          <span class="pubtitle">In-field performance evaluation of robotic arm developed for harvesting cotton bolls.</span>
-          <span class="pubmeta">Computers and Electronics in Agriculture (2024).</span>
-          <a class="pubdoi" href="#" target="_blank" rel="noopener">DOI</a>
-        </li>
-        <li>
-          <span class="pubtitle">Transformer-based model for prediction of protein content using NIR spectroscopy (ProTformer).</span>
-          <span class="pubmeta">Food Research International (2024).</span>
-          <a class="pubdoi" href="#" target="_blank" rel="noopener">DOI</a>
-        </li>
-      </ol>
-
-      <p class="hint">
-        Tip: You can paste your full publication list later. I kept placeholders for DOI links.
-      </p>
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <p>Placeholder.</p>
     </section>
 
-    <!-- Patents -->
-    <section id="patents" class="section card">
-      <div class="section-head">
-        <h2>Patents</h2>
-        <span class="badge">IP</span>
-      </div>
-      <p class="muted">Add your patents here (Title, Year, Status, Patent No.).</p>
+    <section id="patents" class="section">
+      <h2>Patents</h2>
+      <p>Placeholder.</p>
     </section>
 
-    <!-- Copyrights -->
-    <section id="copyrights" class="section card">
-      <div class="section-head">
-        <h2>Copyrights</h2>
-        <span class="badge">IP</span>
-      </div>
-      <p class="muted">Add your software copyrights / registrations here.</p>
+    <section id="copyrights" class="section">
+      <h2>Copyrights</h2>
+      <p>Placeholder.</p>
     </section>
 
-    <!-- Talks -->
-    <section id="talks" class="section card">
-      <div class="section-head">
-        <h2>Talks</h2>
-        <span class="badge">Invited / Conference</span>
-      </div>
-
-      <ul class="bullets">
-        <li><strong>ASABE Annual International Meeting</strong> — Presentation on automated harvesting system (Year: add).</li>
-        <li><strong>Conference / Seminar</strong> — Add talk title, venue, and date.</li>
-      </ul>
+    <section id="talks" class="section">
+      <h2>Talks</h2>
+      <p>Placeholder.</p>
     </section>
 
-    <!-- News -->
-    <section id="news" class="section card">
-      <div class="section-head">
-        <h2>News</h2>
-        <span class="badge">Updates</span>
-      </div>
-
-      <ul class="bullets">
+    <section id="news" class="section">
+      <h2>News</h2>
+      <ul>
         <li><strong>Apr 2025:</strong> Joined Michigan State University as Postdoctoral Research Scholar.</li>
-        <li><strong>Update:</strong> Add your latest paper acceptance / grant / award here.</li>
       </ul>
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery" class="section card">
-      <div class="section-head">
-        <h2>Gallery</h2>
-        <span class="badge">Photos</span>
-      </div>
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <p>Placeholder (we will add images later).</p>
+    </section>
 
-      <div class="gallery">
-        <!-- Replace these placeholders with your images in assets/ -->
-        <div class="gitem">Add image 1</div>
-        <div class="gitem">Add image 2</div>
-        <div class="gitem">Add image 3</div>
-        <div class="gitem">Add image 4</div>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contactBox">
+        <div><strong>Email:</strong> <a href="mailto:naseeb501@gmail.com">naseeb501@gmail.com</a></div>
+        <div><strong>Alternate:</strong> <a href="mailto:naseeb.singh@icar.gov.in">naseeb.singh@icar.gov.in</a></div>
       </div>
-
-      <p class="hint">Later, we can convert these boxes into real images with captions.</p>
     </section>
 
     <footer class="footer">
-      <span>© <span id="year"></span> Dr. Naseeb Singh</span>
+      © <span id="year"></span> Dr. Naseeb Singh
     </footer>
   </main>
 
   <script>
-    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Active nav highlight on scroll
+    // Active nav circle highlight while scrolling
     const sections = Array.from(document.querySelectorAll("section[id]"));
-    const navLinks = Array.from(document.querySelectorAll(".navchip"));
+    const navLinks = Array.from(document.querySelectorAll(".navCircle"));
 
-    const setActive = (id) => {
+    function setActive(id){
       navLinks.forEach(a => a.classList.toggle("active", a.dataset.section === id));
-    };
+    }
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) setActive(entry.target.id);
+        if(entry.isIntersecting) setActive(entry.target.id);
       });
     }, { rootMargin: "-45% 0px -45% 0px", threshold: 0.01 });
 
