@@ -603,6 +603,43 @@
     }, { rootMargin: "-45% 0px -45% 0px", threshold: 0.01 });
 
     sections.forEach(sec => observer.observe(sec));
+
+    // ===== Gallery slider (auto every 3 seconds + arrows) =====
+(function(){
+  const slides = Array.from(document.querySelectorAll("#gallery .slide"));
+  const prevBtn = document.querySelector("#gallery .sliderBtn.prev");
+  const nextBtn = document.querySelector("#gallery .sliderBtn.next");
+  if(!slides.length) return;
+
+  let idx = 0;
+
+  function show(i){
+    slides.forEach((s, k) => s.classList.toggle("active", k === i));
+  }
+
+  function next(){
+    idx = (idx + 1) % slides.length;
+    show(idx);
+  }
+
+  function prev(){
+    idx = (idx - 1 + slides.length) % slides.length;
+    show(idx);
+  }
+
+  nextBtn?.addEventListener("click", () => { next(); resetTimer(); });
+  prevBtn?.addEventListener("click", () => { prev(); resetTimer(); });
+
+  let timer = setInterval(next, 3000);
+
+  function resetTimer(){
+    clearInterval(timer);
+    timer = setInterval(next, 3000);
+  }
+
+  show(idx);
+})();
+
   </script>
 </body>
 </html>
