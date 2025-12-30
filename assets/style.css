@@ -796,3 +796,27 @@ html{
   scroll-behavior: smooth;   /* optional */
   scroll-padding-top: 110px; /* adjust to your header height */
 }
+
+/* ===== Research slider links ===== */
+.slideLink{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity .35s ease;
+  display: block;
+}
+.slideLink.active{ opacity: 1; }
+
+.slideImg{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* show full image */
+  display: block;
+}
+
+.rHighlightsHint{
+  margin-top: 8px;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 13px;
+}
