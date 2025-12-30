@@ -3,99 +3,207 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dr. Naseeb Singh</title>
-  <meta name="description" content="Dr. Naseeb Singh — Postdoctoral Research Scholar at Michigan State University." />
+  <title>Dr. Naseeb Singh | Research Profile</title>
+  <meta name="description" content="Research profile of Dr. Naseeb Singh (agricultural robotics, computer vision, deep learning, sensors & smart agri-technologies)." />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
-
 <body>
-  <!-- Top nav -->
-  <header class="topbar">
-    <div class="topbar-inner">
-      <a class="brand" href="#top">Naseeb Singh</a>
-
-      <nav class="nav" aria-label="Primary navigation">
+  <div class="topbar">
+    <div class="nav">
+      <div class="brand"><span class="dot"></span> Dr. Naseeb Singh</div>
+      <div class="navlinks">
         <a href="#about">About</a>
-        <a href="#education">Education</a>
         <a href="#research">Research</a>
-        <a href="#publications">Publication</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
         <a href="#patents">Patents</a>
-        <a href="#copyrights">Copyrights</a>
-        <a href="#gallery">Gallery</a>
-      </nav>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
     </div>
-  </header>
+  </div>
 
-  <main id="top" class="container">
-    <!-- Hero -->
+  <div class="container">
     <section class="hero">
-      <div class="hero-left">
-        <img class="avatar" src="assets/profile.jpg" alt="Dr. Naseeb Singh"
-             onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='grid';" />
-        <div class="avatar-fallback" id="avatarFallback" aria-label="Profile photo placeholder">
-          NS
+      <div class="avatar" aria-label="Profile photo placeholder">Photo</div>
+      <div>
+        <h1>Dr. Naseeb Singh</h1>
+        <div class="subtitle">
+          Postdoctoral Research Scholar, Michigan State University (from Apr 2025) •
+          ARS-Scientist, ICAR-Research Complex for NEH Region, Umiam (2018–present)
+        </div>
+        <div class="pillrow" style="margin-top:12px">
+          <span class="pill">Agricultural Robotics</span>
+          <span class="pill">Computer Vision</span>
+          <span class="pill">Deep Learning</span>
+          <span class="pill">Sensors & Smart Agri-Tech</span>
+        </div>
+        <div class="pillrow">
+          <a class="btn" href="mailto:naseeb501@gmail.com">naseeb501@gmail.com</a>
+          <a class="btn" href="mailto:naseeb.singh@icar.gov.in">naseeb.singh@icar.gov.in</a>
+          <!-- Optional: add links below -->
+          <a class="btn" href="#" title="Add your Google Scholar link">Google Scholar</a>
+          <a class="btn" href="#" title="Add your GitHub link">GitHub</a>
+          <a class="btn" href="#" title="Add your LinkedIn link">LinkedIn</a>
         </div>
       </div>
+    </section>
 
-      <div class="hero-right">
-        <h1 class="name">Dr. Naseeb Singh</h1>
-        <p class="designation">
-          Postdoctoral Research Scholar, Michigan State University (Apr 2025–present)
+    <div class="grid">
+      <main class="card" id="about">
+        <h2>About</h2>
+        <p>
+          I work at the intersection of <b>agricultural robotics</b>, <b>computer vision</b>, and <b>deep learning</b>,
+          focusing on practical sensing and automation solutions for agriculture and allied sciences.
+          My doctoral work (IIT Kharagpur) developed a robotic arm for cotton boll harvesting.
         </p>
-
-        <div class="keywords" aria-label="Research keywords">
-          <span class="kw">Agricultural Robotics</span>
-          <span class="kw">Computer Vision</span>
-          <span class="kw">Deep Learning</span>
-          <span class="kw">NIRS / HSI</span>
-          <span class="kw">Precision Agriculture</span>
+        <div class="item">
+          <b>Education</b>
+          <div class="small">
+            Ph.D. (2023), IIT Kharagpur — Robotic arm for cotton boll harvesting •
+            M.Tech (2014), IIT Kharagpur — Farm Machinery & Power •
+            B.Tech (2012), CAE Raichur — Agricultural Engineering
+          </div>
         </div>
+        <div class="item" id="research">
+          <b>Research interests</b>
+          <ul class="list">
+            <li>Vision-based detection & segmentation for field crops</li>
+            <li>Robotic manipulation for selective harvesting</li>
+            <li>Deep learning for decision support and mobile/edge deployment</li>
+            <li>Sensors, embedded systems, and smart mechanization</li>
+          </ul>
+        </div>
+      </main>
+
+      <aside class="card">
+        <h2>Highlights</h2>
+
+        <div class="item">
+          <b>Current roles</b>
+          <div class="small">
+            Postdoctoral Research Scholar, Michigan State University (Apr 2025–present)<br/>
+            ARS-Scientist, ICAR-Research Complex for NEH Region, Umiam (Jul 2018–present)
+          </div>
+        </div>
+
+        <div class="item">
+          <b>Technical skills</b>
+          <div class="small">
+            TensorFlow/Keras, OpenCV, Scikit-learn, Pandas • Python, ROS, MATLAB • SolidWorks • Proteus
+          </div>
+        </div>
+
+        <div class="item">
+          <b>Download</b>
+          <div class="small">
+            <a href="cv.pdf" target="_blank" rel="noopener">Full CV (PDF)</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="card" id="publications" style="margin-top:18px">
+      <h2>Selected publications</h2>
+      <div class="small">A short list; expand as needed.</div>
+
+      <div class="item">
+        <b>Vision transformers for cotton boll segmentation</b><br/>
+        <span class="small">Industrial Crops and Products (2025) • DOI: 10.1016/j.indcrop.2024.120241</span>
+      </div>
+
+      <div class="item">
+        <b>In-field performance evaluation of robotic arm for harvesting cotton bolls</b><br/>
+        <span class="small">Computers and Electronics in Agriculture (2024) • DOI: 10.1016/j.compag.2024.109517</span>
+      </div>
+
+      <div class="item">
+        <b>Lightweight CNN models for semantic segmentation of in-field cotton bolls</b><br/>
+        <span class="small">Artificial Intelligence in Agriculture (2023) • DOI: 10.1016/j.aiia.2023.03.001</span>
+      </div>
+
+      <div class="item">
+        <b>Evolutionary algorithm-assisted ANN for cotton-picking manipulator IK</b><br/>
+        <span class="small">Journal of Field Robotics (2023) • DOI: 10.1002/rob.22247</span>
+      </div>
+
+      <div class="item">
+        <b>Semantic segmentation of in-field cotton bolls from the sky</b><br/>
+        <span class="small">Smart Agricultural Technology (2022) • DOI: 10.1016/j.atech.2022.100045</span>
+      </div>
+
+      <div class="item">
+        <b>Image processing algorithms for cotton boll detection in natural lighting</b><br/>
+        <span class="small">Artificial Intelligence in Agriculture (2021) • DOI: 10.1016/j.aiia.2021.07.002</span>
       </div>
     </section>
 
-    <!-- Sections (placeholders for now) -->
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>Write a short 4–6 line introduction here (you can update later).</p>
+    <section class="card" id="projects" style="margin-top:18px">
+      <h2>Projects</h2>
+      <div class="item">
+        <b>Robotic arm for harvesting cotton bolls</b><br/>
+        <span class="small">Ph.D. research (IIT Kharagpur), 2014–2018</span>
+      </div>
+      <div class="item">
+        <b>Automatic two-row precise maize planter for hilly region</b><br/>
+        <span class="small">ICAR project — Principal Investigator (Sep 2021–present)</span>
+      </div>
+      <div class="item">
+        <b>Revolving fund scheme for commercialization of farm tools & machinery</b><br/>
+        <span class="small">ICAR project — Principal Investigator (Jun 2019–present)</span>
+      </div>
     </section>
 
-    <section id="education" class="section">
-      <h2>Education</h2>
-      <p>Placeholder (we’ll fill in next).</p>
+    <section class="card" id="patents" style="margin-top:18px">
+      <h2>Patents & copyrights (selected)</h2>
+
+      <h3>Product patents filed (farm machinery)</h3>
+      <ul class="list">
+        <li>Manual operated root crop washer</li>
+        <li>Turmeric boiler (coal consumption reduced by ~27%)</li>
+        <li>Manual turmeric slicer (≈57.2 kg/h vs ≈9.45 kg/h traditional)</li>
+        <li>Solar–biomass hybrid dryer</li>
+        <li>Mushroom compost mixing-cum-bagging machine</li>
+      </ul>
+
+      <h3>Copyrights</h3>
+      <ul class="list">
+        <li>Deep learning-based mobile app for in-situ habitat suitability prediction of <i>Perilla frutescens</i></li>
+        <li>NIRCORE: NIRS-based trait-specific core set selection software</li>
+      </ul>
     </section>
 
-    <section id="research" class="section">
-      <h2>Research</h2>
-      <p>Placeholder (we’ll fill in next).</p>
+    <section class="card" id="teaching" style="margin-top:18px">
+      <h2>Teaching & invited talks</h2>
+      <div class="item">
+        <b>Teaching</b><br/>
+        <span class="small">Farm Machinery & Power (1+1), Renewable Energy & Green Technology (1+1), Protected Cultivation & Secondary Agriculture (1+1)</span>
+      </div>
+      <div class="item">
+        <b>Invited talks</b><br/>
+        <span class="small">AI in hill agriculture (NICRA training, Mar 2024) • Farmers E-market (National Symposium, Oct 2023)</span>
+      </div>
     </section>
 
-    <section id="publications" class="section">
-      <h2>Publication</h2>
-      <p>Placeholder (we’ll format nicely next).</p>
+    <section class="card" id="contact" style="margin-top:18px">
+      <h2>Contact</h2>
+      <div class="small">
+        Email: <a href="mailto:naseeb501@gmail.com">naseeb501@gmail.com</a> •
+        <a href="mailto:naseeb.singh@icar.gov.in">naseeb.singh@icar.gov.in</a>
+      </div>
+      <div class="small" style="margin-top:10px">
+        Tip: replace the “Photo” box with <span class="kbd">assets/profile.jpg</span> and update the links in the top area.
+      </div>
     </section>
 
-    <section id="patents" class="section">
-      <h2>Patents</h2>
-      <p>Placeholder.</p>
-    </section>
-
-    <section id="copyrights" class="section">
-      <h2>Copyrights</h2>
-      <p>Placeholder.</p>
-    </section>
-
-    <section id="gallery" class="section">
-      <h2>Gallery</h2>
-      <p>Placeholder (we’ll add a clean gallery grid next).</p>
-    </section>
-
-    <footer class="footer">
-      <span>© <span id="year"></span> Dr. Naseeb Singh</span>
+    <footer>
+      © <span id="year"></span> Dr. Naseeb Singh. Built with a simple static HTML template for GitHub Pages.
     </footer>
-  </main>
+  </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
