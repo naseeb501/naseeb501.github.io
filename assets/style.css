@@ -147,14 +147,14 @@ body{
 
 .name{
   margin:0;
-  font-size: 42px;
+  font-size: 38px;
   line-height: 1.05;
 }
 
 .designation{
   margin-top: 10px;
   color: var(--muted);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* Keywords */
@@ -167,13 +167,13 @@ body{
 
 /* blue background keywords */
 .kw{
-  background: var(--blueChipBg);
-  color: var(--blueChipText);
+  background: #efe2cf;
+  color: #1f2937;
   border: 1px solid rgba(37,99,235,.18);
   padding: 8px 12px;
   border-radius: 999px;
-  font-size: 13px;
-  font-weight: 750;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 /* SPACE between keywords and links */
