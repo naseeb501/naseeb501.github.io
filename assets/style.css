@@ -294,3 +294,98 @@ body{
 @media (max-width: 520px){
   .eduTop{ flex-direction: column; align-items: flex-start; }
 }
+
+
+/* ===================== Research ===================== */
+.research-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap:16px;
+  margin-top:14px;
+}
+
+.r-card{
+  background: rgba(255,255,255,.75);
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:16px;
+  padding:16px 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+}
+
+.r-card h3{
+  margin:0 0 10px 0;
+  font-size:18px;
+}
+
+.r-card ul{
+  margin:0;
+  padding-left:18px;
+  line-height:1.6;
+  color:#222;
+}
+
+.r-split{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap:16px;
+  margin-top:16px;
+}
+
+.r-box{
+  background: rgba(255,255,255,.75);
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:16px;
+  padding:16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+}
+
+.r-box h3{
+  margin:0 0 10px 0;
+  font-size:18px;
+}
+
+.r-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:10px;
+}
+
+.tag{
+  display:inline-flex;
+  align-items:center;
+  padding:4px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:600;
+  margin-right:8px;
+  border:1px solid rgba(0,0,0,.10);
+}
+
+.tag-patent{ background: rgba(255, 183, 77, .22); }
+.tag-copyright{ background: rgba(129, 212, 250, .24); }
+.tag-tech{ background: rgba(165, 214, 167, .28); }
+
+.note{
+  margin:12px 0 0 0;
+  color:#333;
+  font-size:13px;
+  opacity:.85;
+}
+
+.callout{
+  margin-top:12px;
+  padding:12px 12px;
+  border-radius:14px;
+  background: rgba(0,0,0,.04);
+  border:1px dashed rgba(0,0,0,.18);
+  color:#222;
+  line-height:1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .research-grid{ grid-template-columns: 1fr; }
+  .r-split{ grid-template-columns: 1fr; }
+}
