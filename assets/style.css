@@ -62,25 +62,28 @@ body{
 
 /* circle buttons */
 .navCircle{
-  width: 54px;
-  height: 54px;
-  border-radius: 999px;
+  /* rectangle size (auto width, fixed height) */
+  height: 42px;
+  width: auto;
+  padding: 0 14px;            /* controls rectangle width */
+  border-radius: 12px;        /* smooth corners (increase to 16 if you want more rounded) */
+
   display:flex;
   align-items:center;
   justify-content:center;
 
   text-decoration:none;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 650;
-  text-align:center;
-  line-height: 1.05;
+  white-space: nowrap;        /* keep text in one line */
 
   background: rgba(255,250,242,.85);
   border: 2px solid var(--ring);
 
   transition: transform .12s ease, border-color .12s ease, color .12s ease, background .12s ease;
 }
+
 
 .navCircle:hover{
   transform: translateY(-1px);
