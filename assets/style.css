@@ -741,3 +741,51 @@ body{
 .sliderBtn:hover{
   background: rgba(255,255,255,.98);
 }
+
+/* ===================== Contact ===================== */
+.contactCard{
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.78);
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 8px 22px rgba(0,0,0,.06);
+}
+
+.contactRow{
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 14px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(0,0,0,.06);
+}
+
+.contactRow:first-child{
+  border-top: none;
+  padding-top: 0;
+}
+
+.contactLabel{
+  font-weight: 700;
+  color: #111;
+}
+
+.contactValue{
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.contactLink{
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contactLink:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 520px){
+  .contactRow{ grid-template-columns: 1fr; }
+  .contactLabel{ margin-bottom: 2px; }
+}
