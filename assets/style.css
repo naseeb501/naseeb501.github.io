@@ -823,3 +823,14 @@ html{
   color: var(--muted);
   font-size: 13px;
 }
+/* make sure slider is the positioning context */
+.slider{ position: relative; }
+
+/* keep slides inside viewport */
+.sliderViewport{ position: relative; }
+
+/* slides stay below buttons */
+.slideLink{ z-index: 1; }
+
+/* arrows always clickable on top */
+.sliderBtn{ z-index: 10; }
