@@ -263,12 +263,12 @@ body{
 }
 
 .eduDegree{
-  font-weight: 850;
+  font-weight: 600;
   color: #000;
 }
 
 .eduYear{
-  font-weight: 800;
+  font-weight: 600;
   color: #000;
   opacity: .75;
 }
@@ -577,7 +577,7 @@ body{
   display: inline-block;
   padding: 4px 10px;
   border-radius: 999px;
-  font-weight: 850;
+  font-weight: 600;
   font-size: 12px;
   border: 1px solid rgba(0,0,0,.10);
   vertical-align: middle;
