@@ -663,7 +663,7 @@ body{
 }
 
 .news-title{
-  font-weight: 300;
+  font-weight: 600;
   color: #111;
   text-decoration: none;
 }
@@ -681,4 +681,63 @@ body{
   margin-top: 6px;
   color: var(--muted);
   font-size: 14px;
+}
+
+/* ===================== Gallery Slider ===================== */
+.slider{
+  position: relative;
+  margin-top: 14px;
+  background: rgba(255,255,255,.55);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 18px;
+  padding: 14px;
+  overflow: hidden;
+}
+
+.sliderViewport{
+  position: relative;
+  height: 420px;          /* change if you want taller/shorter */
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(0,0,0,.04);
+}
+
+.slide{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.slide.active{
+  opacity: 1;
+}
+
+.sliderBtn{
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,.12);
+  background: rgba(255,255,255,.85);
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.10);
+}
+
+.sliderBtn.prev{ left: 16px; }
+.sliderBtn.next{ right: 16px; }
+
+.sliderBtn:hover{
+  background: rgba(255,255,255,.98);
 }

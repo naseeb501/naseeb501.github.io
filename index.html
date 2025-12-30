@@ -555,10 +555,22 @@
 </section>
 
 
-    <section id="gallery" class="section">
-      <h2>Gallery</h2>
-      <p>Will add images later</p>
-    </section>
+<!-- ===================== Gallery ===================== -->
+<section id="gallery" class="section">
+  <h2>Gallery</h2>
+
+  <div class="slider" aria-label="Image gallery">
+    <button class="sliderBtn prev" type="button" aria-label="Previous image">‹</button>
+
+    <div class="sliderViewport">
+      <img class="slide active" src="assets/img/1.jpg" alt="Gallery image 1">
+      <img class="slide" src="assets/img/2.jpg" alt="Gallery image 2">
+    </div>
+
+    <button class="sliderBtn next" type="button" aria-label="Next image">›</button>
+  </div>
+</section>
+
 
     <section id="contact" class="section">
       <h2>Contact</h2>
@@ -591,6 +603,43 @@
     }, { rootMargin: "-45% 0px -45% 0px", threshold: 0.01 });
 
     sections.forEach(sec => observer.observe(sec));
+
+    // ===== Gallery slider (auto every 3 seconds + arrows) =====
+(function(){
+  const slides = Array.from(document.querySelectorAll("#gallery .slide"));
+  const prevBtn = document.querySelector("#gallery .sliderBtn.prev");
+  const nextBtn = document.querySelector("#gallery .sliderBtn.next");
+  if(!slides.length) return;
+
+  let idx = 0;
+
+  function show(i){
+    slides.forEach((s, k) => s.classList.toggle("active", k === i));
+  }
+
+  function next(){
+    idx = (idx + 1) % slides.length;
+    show(idx);
+  }
+
+  function prev(){
+    idx = (idx - 1 + slides.length) % slides.length;
+    show(idx);
+  }
+
+  nextBtn?.addEventListener("click", () => { next(); resetTimer(); });
+  prevBtn?.addEventListener("click", () => { prev(); resetTimer(); });
+
+  let timer = setInterval(next, 3000);
+
+  function resetTimer(){
+    clearInterval(timer);
+    timer = setInterval(next, 3000);
+  }
+
+  show(idx);
+})();
+
   </script>
 </body>
 </html>
