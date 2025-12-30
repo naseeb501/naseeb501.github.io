@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+<<<<<<< HEAD
   <div class="topbar">
     <div class="nav">
       <div class="brand"><span class="dot"></span> Dr. Naseeb Singh</div>
@@ -21,9 +22,29 @@
         <a href="#contact">Contact</a>
         <a class="btn" href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
       </div>
+=======
+  <!-- Top navigation -->
+  <header class="topbar" id="top">
+    <div class="topbar-inner">
+      <div class="brand">Dr. Naseeb Singh</div>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="navCircle" href="#about" data-section="about">About</a>
+        <a class="navCircle" href="#education" data-section="education">Education</a>
+        <a class="navCircle" href="#research" data-section="research">Research</a>
+        <a class="navCircle" href="#publications" data-section="publications">Publications</a>
+        <a class="navCircle" href="#patents" data-section="patents">Patents</a>
+        <a class="navCircle" href="#copyrights" data-section="copyrights">Copyrights</a>
+        <a class="navCircle" href="#talks" data-section="talks">Talks</a>
+        <a class="navCircle" href="#news" data-section="news">News</a>
+        <a class="navCircle" href="#gallery" data-section="gallery">Gallery</a>
+        <a class="navCircle" href="#contact" data-section="contact">Contact</a>
+      </nav>
+>>>>>>> e9c34dcbefc83c80cd4a3418bd3ec928ce6a7540
     </div>
   </div>
 
+<<<<<<< HEAD
   <div class="container">
     <section class="hero">
       <div class="avatar" aria-label="Profile photo placeholder">Photo</div>
@@ -47,9 +68,19 @@
           <a class="btn" href="#" title="Add your GitHub link">GitHub</a>
           <a class="btn" href="#" title="Add your LinkedIn link">LinkedIn</a>
         </div>
+=======
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-left">
+        <img class="avatar" src="assets/profile.jpg" alt="Dr. Naseeb Singh"
+             onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='grid';" />
+        <div class="avatarFallback" id="avatarFallback" aria-label="Profile photo placeholder">NS</div>
+>>>>>>> e9c34dcbefc83c80cd4a3418bd3ec928ce6a7540
       </div>
     </section>
 
+<<<<<<< HEAD
     <div class="grid">
       <main class="card" id="about">
         <h2>About</h2>
@@ -199,11 +230,117 @@
 
     <footer>
       © <span id="year"></span> Dr. Naseeb Singh. Built with a simple static HTML template for GitHub Pages.
+=======
+      <div class="hero-right">
+        <h1 class="name">Dr. Naseeb Singh</h1>
+        <div class="designation">Postdoctoral Research Scholar, Michigan State University (Apr 2025–present)</div>
+
+        <div class="keywords" aria-label="Research keywords">
+          <span class="kw">Agricultural Robotics</span>
+          <span class="kw">Computer Vision</span>
+          <span class="kw">Deep Learning</span>
+          <span class="kw">NIRS / HSI</span>
+          <span class="kw">Precision Agriculture</span>
+        </div>
+
+        <!-- SPACE requested between keywords and links -->
+        <div class="heroLinks" aria-label="Contact links">
+          <!-- replace # with your real links -->
+          <a class="linkPill" href="mailto:naseeb501@gmail.com">Email</a>
+          <a class="linkPill" href="#" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="linkPill" href="#" target="_blank" rel="noopener">GitHub</a>
+          <a class="linkPill" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="linkPill" href="#" target="_blank" rel="noopener">ORCID</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sections (placeholders; you will edit later) -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>Write your short introduction here.</p>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <p>Placeholder.</p>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research</h2>
+      <p>Placeholder.</p>
+    </section>
+
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <p>Placeholder.</p>
+    </section>
+
+    <section id="patents" class="section">
+      <h2>Patents</h2>
+      <p>Placeholder.</p>
+    </section>
+
+    <section id="copyrights" class="section">
+      <h2>Copyrights</h2>
+      <p>Placeholder.</p>
+    </section>
+
+    <section id="talks" class="section">
+      <h2>Talks</h2>
+      <p>Placeholder.</p>
+    </section>
+
+    <section id="news" class="section">
+      <h2>News</h2>
+      <ul>
+        <li><strong>Apr 2025:</strong> Joined Michigan State University as Postdoctoral Research Scholar.</li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <p>Placeholder (we will add images later).</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contactBox">
+        <div><strong>Email:</strong> <a href="mailto:naseeb501@gmail.com">naseeb501@gmail.com</a></div>
+        <div><strong>Alternate:</strong> <a href="mailto:naseeb.singh@icar.gov.in">naseeb.singh@icar.gov.in</a></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> Dr. Naseeb Singh
+>>>>>>> e9c34dcbefc83c80cd4a3418bd3ec928ce6a7540
     </footer>
   </div>
 
+<<<<<<< HEAD
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+=======
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Active nav circle highlight while scrolling
+    const sections = Array.from(document.querySelectorAll("section[id]"));
+    const navLinks = Array.from(document.querySelectorAll(".navCircle"));
+
+    function setActive(id){
+      navLinks.forEach(a => a.classList.toggle("active", a.dataset.section === id));
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) setActive(entry.target.id);
+      });
+    }, { rootMargin: "-45% 0px -45% 0px", threshold: 0.01 });
+
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+>>>>>>> e9c34dcbefc83c80cd4a3418bd3ec928ce6a7540
 </body>
 </html>
