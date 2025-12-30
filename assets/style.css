@@ -789,3 +789,7 @@ body{
   .contactRow{ grid-template-columns: 1fr; }
   .contactLabel{ margin-bottom: 2px; }
 }
+
+.section{
+  scroll-margin-top: 110px;  /* adjust value */
+}
