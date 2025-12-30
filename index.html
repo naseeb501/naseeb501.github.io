@@ -688,12 +688,6 @@ function resetTimer(){
 
 let timer = setInterval(next, 3000);
 
-root.addEventListener("mouseenter", () => clearInterval(timer));
-root.addEventListener("mouseleave", () => {
-  clearInterval(timer);
-  timer = setInterval(next, 3000);
-});
-
 function resetTimer(){
   clearInterval(timer);
   timer = setInterval(next, 3000);
