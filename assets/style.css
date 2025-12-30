@@ -231,5 +231,5 @@ body{
 /* Mobile */
 @media (max-width: 820px){
   .hero{ grid-template-columns: 1fr; }
-  .navCircle{ width: 52px; height: 52px; font-size: 12px; }
+  .navCircle{ height: 38px; padding: 0 12px; font-size: 13px; }
 }
