@@ -881,3 +881,7 @@ html{
   .newsItem{ grid-template-columns: 1fr; }
   .newsDate{ opacity: 0.75; }
 }
+
+.newsLink { color: inherit; text-decoration: none; }
+.newsLink:hover { text-decoration: underline; }
+
