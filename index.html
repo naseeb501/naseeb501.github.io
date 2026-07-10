@@ -107,6 +107,15 @@
 
   <div class="eduGrid">
 
+    <div class="eduCard eduPostdoc">
+      <div class="eduTop">
+        <div class="eduDegree">Postdoctoral Research</div>
+        <div class="eduYear">Apr 2025 – May 2026</div>
+      </div>
+      <div class="eduInst">Michigan State University, East Lansing, Michigan, USA</div>
+      <div class="eduNote">Focus: Agricultural automation and artificial intelligence for fruits and vegetables</div>
+    </div>
+
     <div class="eduCard eduPhd">
       <div class="eduTop">
         <div class="eduDegree">Ph.D. (Agricultural Robotics)</div>
@@ -191,7 +200,8 @@
   <h2>Publications</h2>
 
   <div class="pub-controls" role="tablist" aria-label="Publication years">
-    <button class="pub-tab active" type="button" data-year="2025" role="tab" aria-selected="true">2025</button>
+    <button class="pub-tab active" type="button" data-year="2026" role="tab" aria-selected="true">2026</button>
+    <button class="pub-tab" type="button" data-year="2025" role="tab" aria-selected="false">2025</button>
     <button class="pub-tab" type="button" data-year="2024" role="tab" aria-selected="false">2024</button>
     <button class="pub-tab" type="button" data-year="2023" role="tab" aria-selected="false">2023</button>
     <button class="pub-tab" type="button" data-year="2022" role="tab" aria-selected="false">2022</button>
@@ -204,6 +214,27 @@
       <!-- NOTE:
            Each item has data-year="YYYY".
            Clicking a paper opens the DOI link in a new tab. -->
+
+      <li class="pub-item" data-year="2026">
+        <a class="pub-title" href="https://doi.org/10.1016/j.atech.2026.102022" target="_blank" rel="noopener">
+          Development and laboratory assessment of automatic selective harvesting mechanisms of green asparagus
+        </a>
+        <div class="pub-meta">Smart Agricultural Technology 14, 102022</div>
+      </li>
+
+      <li class="pub-item" data-year="2026">
+        <a class="pub-title" href="https://doi.org/10.1016/j.fbio.2026.109164" target="_blank" rel="noopener">
+          A deep learning-based framework with geometric-prior fusion for 3D vision-based online sweetpotato volume estimation
+        </a>
+        <div class="pub-meta">Food Bioscience 81, 109164</div>
+      </li>
+
+      <li class="pub-item" data-year="2026">
+        <a class="pub-title" href="https://doi.org/10.1016/j.atech.2026.102025" target="_blank" rel="noopener">
+          A novel and computationally efficient chunk-wise fully connected deep learning model for non-destructive protein prediction using NIR spectroscopy
+        </a>
+        <div class="pub-meta">Smart Agricultural Technology 14, 102025</div>
+      </li>
 
       <li class="pub-item" data-year="2025">
   <a class="pub-title" href="https://doi.org/10.1016/j.fbio.2025.108201" target="_blank" rel="noopener">
@@ -420,7 +451,7 @@
     tabs.forEach(btn => btn.addEventListener("click", () => showYear(btn.dataset.year)));
 
     // Default year
-    showYear("2025");
+    showYear("2026");
   });
 </script>
 
